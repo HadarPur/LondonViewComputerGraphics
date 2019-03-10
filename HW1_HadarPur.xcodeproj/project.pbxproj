@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3E04502720FD36710039F584 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E04502620FD36710039F584 /* main.cpp */; };
+		3E04502F20FD36840039F584 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E04502E20FD36840039F584 /* OpenGL.framework */; };
+		3E04503120FD368C0039F584 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E04503020FD368C0039F584 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		3E04502320FD36710039F584 /* HW1_HadarPur */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW1_HadarPur; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E04502620FD36710039F584 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3E04502E20FD36840039F584 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3E04503020FD368C0039F584 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E04503120FD368C0039F584 /* GLUT.framework in Frameworks */,
+				3E04502F20FD36840039F584 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				3E04502520FD36710039F584 /* HW1_HadarPur */,
 				3E04502420FD36710039F584 /* Products */,
+				3E04502D20FD36840039F584 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				3E04502620FD36710039F584 /* main.cpp */,
 			);
 			path = HW1_HadarPur;
+			sourceTree = "<group>";
+		};
+		3E04502D20FD36840039F584 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E04503020FD368C0039F584 /* GLUT.framework */,
+				3E04502E20FD36840039F584 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +192,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -228,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
